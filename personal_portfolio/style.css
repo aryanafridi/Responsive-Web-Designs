@@ -1,0 +1,137 @@
+:root {
+    --blue-p: #00005e;
+    --blue-s: #1111AB;
+    --green-p: #1D5E09;
+    --green-s: #38CB0B;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 1.75em;
+}
+h2 {
+    font-size: 1.25em;
+}
+p {
+    font-size: 1em;
+    font-family: monospace;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 2px var(--blue-p) solid;
+    font-weight: bolder;
+}
+#navbar ul {
+    list-style: none;
+}
+#navbar ul li {
+    display: inline-block;
+    margin: 1em 3em;
+    width: 70px;
+}
+#navbar a {
+    color: var(--blue-p);
+    text-decoration: none;
+}
+#navbar a:hover {
+    color: var(--green-p);
+}
+#welcome-section {
+    color: white;
+    box-sizing: border-box;
+    padding: 100px 10px 10px;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(30deg, var(--blue-s), var(--blue-p) 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#welcome-section p {
+    color: var(--green-s);
+}
+#projects {
+    color: var(--blue-p);
+    padding: 20px;
+}
+#projects h1 {
+    text-align: center;
+}
+.project-list {
+    display: flex;
+    justify-content: space-around;
+}
+#projects img {
+    max-height: 350px;
+    position: relative;
+    left: -10%;
+}
+.project-tile {
+    overflow: hidden;
+    text-align: center;
+    max-width: 400px;
+    padding-bottom: 10px;
+    background: var(--blue-p);
+    box-shadow: 0 0 15px 2px #505050;
+    margin: 30px 0;
+    color: white;
+    transition: 0.5s;
+    font-family: monospace;
+}
+.project-tile span {
+    opacity: 0;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.project-tile:hover{
+    opacity: 100;
+    box-shadow: 0 0 25px 2px #505050;
+    transform: scale(1.05);
+    color: var(--blue-p);
+    background: white;
+}
+.project-tile:hover span{
+    opacity: 100;
+    color: var(--green-p);
+}
+#contact {
+    background-color: var(--blue-p);
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+#contact img {
+    max-width: 50px;
+    vertical-align: middle;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+@media only screen and (max-width:1024px) {
+    .project-list {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+}

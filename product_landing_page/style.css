@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: #dad4ff;
+    padding: 100px 25px 15px 25px;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+h3 {
+    font-size: 1.25em;
+}
+h4 {
+    font-size: 1.1em;
+    margin:0;
+}
+.main-headings {
+    margin: 40px 0 10px 0;
+    text-decoration: underline;
+
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px #4935D0 inset;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    padding: 25px;
+    background-color: #dad4ff;
+    box-sizing: border-box;
+    width: 100%;
+}
+#header-img {
+    max-width: 15%;
+    height: auto;
+    min-width: 100px;
+}
+#header ul {
+    list-style: none;
+}
+#header ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+#header a {
+    color: black;
+    text-decoration: none;
+}
+#header a:hover {
+    color: #4935D0;
+}
+#form {
+    text-align: center;
+}
+#form input {
+    margin: 10px 0;
+}
+#email {
+    border: 1px black solid;
+    padding: 8px 15px;
+    width: 200px;
+    border-radius: 6px;
+}
+#submit, button {
+    background-color: #4935D0;
+    border: 2px #f9ffd4 solid;
+    color: #f9ffd4;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+#form input[type="submit"]:hover, button:hover {
+    background-color: #f9ffd4;
+    border: 2px #4935D0 solid;
+    color: #4935D0;
+    cursor: pointer;
+}
+
+.feature-list {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 5px auto 30px auto;
+}
+.feature-list img {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+}
+.feature-list div * {
+    margin: 0;
+}
+#working {
+    text-align: center;
+}
+#working iframe{
+    max-width: 90%;
+}
+.pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.price {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border: 2px #4935D0 solid;
+    border-radius: 8px;
+}
+.price div {
+    padding: 10px;
+    background-color: #4935D0;
+    color: #f9ffd4;
+}
+footer {
+    text-align: center;
+}
+@media only screen and (max-width:600px) {
+    body {
+        padding: 210px 10px 5px 10px;
+    }
+    #header {
+        flex-direction: column;
+        height: 200px;
+    }
+    #header ul{
+        padding: 0;
+        text-align: center;
+    }
+    #header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .feature-list img {
+        display: none;
+    }
+    .feature-list {
+        text-align: center;
+        width: 95%;
+    }
+
+}
